@@ -1,0 +1,42 @@
+
+{% extends 'layout.html'%}
+
+{% block content%}
+<body>
+
+ 
+
+ 
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+               {% for blog in blogs %}
+ <!-- Title -->
+          <h1 class="mt-4">{{blog.get('title')}}</h1>
+
+          <!-- Author -->
+        
+          <hr>
+
+        
+
+         
+
+          <!-- Post Content -->
+          <p class="lead">{{blog.get('body')}}</p>
+
+       {% endfor %}  
+          
+  
+</div>
+</div>
+
+   
+  
+  </body>
+{% endblock %}

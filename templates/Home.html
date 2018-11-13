@@ -1,0 +1,95 @@
+
+{% extends 'layout.html'%}
+
+{% block content%}
+<!DOCTYPE  html>
+<html>
+
+<head>
+	<title>Advert2</title>
+
+	<link rel ="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+
+  
+	
+</head>
+
+	<body>
+  <div class="trial">
+  <div class="box">
+  <div class="logo">
+  <img src="img/grouplogo (1).png">
+    
+  </div>
+  <nav>
+  <ul>
+    <li><a href="Index.html">Home</a></li>
+    <li><a href="About Us.html">About Us</a></li>
+    <li><a href="Events.html">Events</a></li>
+    <li><a href="Blog.html">Blog</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    
+  </ul>
+  </nav>
+  </div>
+<!-- </nav>
+<div class="one">
+<img src="img/mainpic.png">
+</div>
+<div class="two">
+<img src="img/lo.png">
+<h1>Love Life<br>Explained</h1>
+</div>
+<div class="three"> -->
+<!-- <img src="img/lady.jpg"> --><!-- 
+
+ -->
+
+
+
+<div class="slides">
+  <img class="mySlides" src="img/music.jpg" style="width:1380px", height="280px">
+  <img class="mySlides" src="img/college.jpg" style="width:1380px", height="280px">
+  <img class="mySlides" src="img/soap.jpg" style="width:1380px", height="280px">
+  <img class="mySlides" src="img/fun.jpg" style="width:1380px", height="280px",>
+  <img class="mySlides" src="img/girl.jpg" style="width:1380px", height="280px">
+   <img class="mySlides" src="img/sky.jpg" style="width:1380px", height="280px">
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+
+<footer>
+  <i class="fa fa-copyright" style="font-size:30px;"></i>
+  <p>2018, All rights reserved  About Us | Privacy | Terms & Conditions</p>
+  <hr>
+  <h3>teeniz group</h3>
+</footer>
+</div>
+   
+
+  
+ 	</body>
+	
+</html>
+
+{% endblock %}
